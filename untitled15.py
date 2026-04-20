@@ -22,8 +22,7 @@ sibsp = st.number_input("Enter Number of siblings/spouses", min_value=0, max_val
 parch = st.number_input("Enter Number of parents/children", min_value=0, max_value=10, value=0)
 fare = st.number_input("Enter Fare", min_value=0.0, max_value=10000.0, value=0.0)
 embarked = st.selectbox("Embarked", ["S", "C", "Q"])
-age = st.number_input("Enter Age", min_value=0.0, max_value=100.0, value=0)
-
+age = st.number_input("Enter Age", min_value=0.0, max_value=100.0, value=0.0)
 if st.button("Predict Survival 🔍"):
     input_dict = {
         "Pclass": [pclass],
